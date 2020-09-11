@@ -1,26 +1,26 @@
 
 def getGradePoint(grade):
 
-  if lettergrade1 == "A":
-    gradepoint1 = 4.0;
-  elif lettergrade1 == "A-":
-    gradepoint1 = 3.67;
-  elif lettergrade1 == "B+":
-    gradepoint1 = 3.33;
-  elif lettergrade1 == "B":
-    gradepoint1 = 3.0;
-  elif lettergrade1 == "B-":
-    gradepoint1 = 2.67;
-  elif lettergrade1 == "C+":
-    gradepoint1 = 2.33;
-  elif lettergrade1 == "C":
-    gradepoint1 = 2.0;
-  elif lettergrade1 == "D":
-    gradepoint1 = 1.0;
-  elif lettergrade1 == "F":
-    gradepoint1 = 0.0;
+  if grade == "A":
+    return 4.0;
+  elif grade == "A-":
+    return 3.67;
+  elif grade == "B+":
+    return 3.33;
+  elif grade == "B":
+    return 3.0;
+  elif grade == "B-":
+   return 2.67;
+  elif grade == "C+":
+    return 2.33;
+  elif grade == "C":
+    return 2.0;
+  elif grade == "D":
+    return 1.0;
+  elif grade == "F":
+    return 0.0;
   else:
-    gradepoint1 = 0.0;
+    return 0.0;
 
 
 
