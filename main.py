@@ -10,7 +10,7 @@ def getGradePoint(grade):
   elif grade == "B":
     return 3.0;
   elif grade == "B-":
-   return 2.67;
+    return 2.67;
   elif grade == "C+":
     return 2.33;
   elif grade == "C":
@@ -22,22 +22,26 @@ def getGradePoint(grade):
   else:
     return 0.0;
 
-
-
 def run():
-  grade = input("Enter your course 1 letter grade: ")
+  grade1 = input("Enter your course 1 letter grade: ")
   credit1 = input("Enter your course 1 credit: ")
-  print(f"Grade point for course 1 is: {getGradePoint(grade)}")
+  credit1 = float(credit1)
+  gradepoint1 = getGradePoint(grade1)
+  print(f"Grade point for course 1 is: {gradepoint1}")
 
-  grade = input("Enter your course 2 letter grade: ")
+  grade2 = input("Enter your course 2 letter grade: ")
   credit2 = input("Enter your course 2 credit: ")
-  print(f"Grade point for course 2 is: {getGradePoint(grade)}")
+  credit2 = float(credit2)
+  gradepoint2 = getGradePoint(grade2)
+  print(f"Grade point for course 2 is: {gradepoint2}")
 
-  grade = input("Enter your course 3 letter grade: ")
+  grade3 = input("Enter your course 3 letter grade: ")
   credit3 = input("Enter your course 3 credit: ")
-  print(f"Grade point for course 3 is: {getGradePoint(grade)}")
+  credit3 = float(credit3)
+  gradepoint3 = getGradePoint(grade3)
+  print(f"Grade point for course 3 is: {gradepoint3}")
   
-  GPAcalculation = ((grade * credit1 + grade * credit2 + grade * credit3) / (credit1 + credit2 +credit3))
+  GPAcalculation = ((gradepoint1 * credit1 + gradepoint2 * credit2 + gradepoint3 * credit3) / (credit1 + credit2 +credit3))
   print(f"Your GPA is: {GPAcalculation}")
 
 if __name__ == "__main__":
